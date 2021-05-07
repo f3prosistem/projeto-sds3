@@ -1,6 +1,7 @@
 package com.f3pro.dsvendas.services;
 
 import com.f3pro.dsvendas.dto.SaleDTO;
+import com.f3pro.dsvendas.dto.SaleSuccessDTO;
 import com.f3pro.dsvendas.dto.SaleSumDTO;
 import com.f3pro.dsvendas.entities.Sale;
 import com.f3pro.dsvendas.repositories.SaleRepository;
@@ -30,6 +31,11 @@ public class SaleService {
     @Transactional(readOnly = true)
     public List<SaleSumDTO> amountGrupedBySeller(){
      return  repository.amountGrupedBySeller();
+    }
+
+    @Transactional(readOnly = true)
+    public List<SaleSuccessDTO> successGrupedBySeller(){
+        return  repository.successGrupedBySeller();
     }
 
 }

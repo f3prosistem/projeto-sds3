@@ -1,6 +1,7 @@
 package com.f3pro.dsvendas.controllers;
 
 import com.f3pro.dsvendas.dto.SaleDTO;
+import com.f3pro.dsvendas.dto.SaleSuccessDTO;
 import com.f3pro.dsvendas.dto.SaleSumDTO;
 import com.f3pro.dsvendas.dto.SellerDTO;
 import com.f3pro.dsvendas.repositories.SaleRepository;
@@ -28,9 +29,15 @@ public class SaleController {
 		Page<SaleDTO> list = service.findAll(pageable);
 		return ResponseEntity.ok(list);
 	}
-	@GetMapping(value = "/sum-by-saller")
+	@GetMapping(value = "/amount-by-saller")
 	public ResponseEntity<List<SaleSumDTO>> amountGrupedBySeller( ) {
 		List<SaleSumDTO> list = service.amountGrupedBySeller();
+		return ResponseEntity.ok(list);
+	}
+
+	@GetMapping(value = "/success-by-saller")
+	public ResponseEntity<List<SaleSuccessDTO>> successGrupedBySeller( ) {
+		List<SaleSuccessDTO> list = service.successGrupedBySeller();
 		return ResponseEntity.ok(list);
 	}
 }
