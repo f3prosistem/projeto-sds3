@@ -20,7 +20,7 @@ export type salePage = {
     last ?: boolean,
     totalPages ?: number,
     totalElements ?: number,
-    number ?: number,
+    number: number,
     first?: boolean,
     numberOfElements ?: number,
     size?: number,
