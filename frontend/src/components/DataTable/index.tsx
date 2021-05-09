@@ -31,7 +31,7 @@ const [activePage, setActivePage] = useState(0);
 
     return (
         <>
-        <Pagination page={page} onPageChance={changePage}/>
+        <Pagination page={page} onPageChange={changePage}/>
             <div className="table-responsive">
                 <table className=" table table-striped table-sm">
                     <thead>
