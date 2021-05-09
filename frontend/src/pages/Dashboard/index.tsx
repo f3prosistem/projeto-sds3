@@ -28,7 +28,7 @@ const Dashboaed = () => {
                 <div className="container">
                     <h2 className="text-primary ">Todas Vendas</h2>
 
-                   
+        
                 </div>
 
                 <DataTable />
