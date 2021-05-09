@@ -25,8 +25,10 @@ const Dashboaed = () => {
 
                 </div>
 
-                <div className="py-3">
-                    <h2 className="text-primary">Todas Vendas</h2>
+                <div className="container">
+                    <h2 className="text-primary ">Todas Vendas</h2>
+
+                   
                 </div>
 
                 <DataTable />
