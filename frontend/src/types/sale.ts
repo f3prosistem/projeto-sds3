@@ -1,3 +1,31 @@
+import { type } from "os"
+import { Seller } from "./seller"
+
+export type Sale ={
+    
+        id: number,
+        visited: number,
+        deals: number,
+        amount: number,
+        date: string,
+        seller: Seller
+            
+
+}
+
+
+
+export type salePage = {
+    content ?: Sale[];
+    last ?: boolean,
+    totalPages ?: number,
+    totalElements ?: number,
+    number ?: number,
+    first?: boolean,
+    numberOfElements ?: number,
+    size?: number,
+    empty ?: boolean
+}
 
 export type SaleSun = {
 
